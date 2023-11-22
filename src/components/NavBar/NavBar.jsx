@@ -8,12 +8,12 @@ const NavBar = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <nav className="bg-[#07332F] h-16 p-2">
+        <nav className="bg-[#07332F] h-16 py-4">
             <div className='flex justify-between items-center container mx-auto'>
                 <img className='h-10' src={logo} alt="" />
 
                 {/*for small device */}
-                <ul className={`fixed w-full h-screen flex flex-col gap-10 justify-center items-center bg-[#F7A582] transform duration-700 ease-in-out ${open ? 'left-0 top-0' : '-top-[1000px] left-0'} `}>
+                <ul className={`fixed w-full h-screen flex flex-col gap-10 justify-center items-center bg-[#F7A582] transform duration-500 ease-in-out ${open ? 'left-0 top-0' : '-top-[2000px]  left-0'} `}>
                     <Link className='text-3xl font-bold font-serif hover:bg-[#07332F] rounded-md p-1 hover:text-white'>Home</Link>
                     <Link className='text-3xl font-bold font-serif hover:bg-[#07332F] rounded-md p-1 hover:text-white'>about</Link>
                     <Link className='text-3xl font-bold font-serif hover:bg-[#07332F] rounded-md p-1 hover:text-white'>Home</Link>
