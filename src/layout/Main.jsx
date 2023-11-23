@@ -1,6 +1,7 @@
 import Footer from "../components/Footer/Footer";
 import NavBar from "../components/NavBar/NavBar";
 import { Outlet, useLocation } from 'react-router-dom';
+import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 
 const Main = () => {
     const location = useLocation();
@@ -16,6 +17,7 @@ const Main = () => {
             {
                 noHeaderFooter || <Footer></Footer>
             }
+            <ScrollToTop></ScrollToTop>
         </div>
     );
 };
