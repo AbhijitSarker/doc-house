@@ -8,7 +8,7 @@ const NavBar = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <nav className="bg-[#07332F] -z-40 h-16 md:h-20 flex justify-center">
+        <nav className="bg-[#07332F] z-10 relative h-16 md:h-20 flex justify-center">
             <div className='flex justify-between items-center container mx-auto'>
                 <img className='h-10' src={logo} alt="" />
 
