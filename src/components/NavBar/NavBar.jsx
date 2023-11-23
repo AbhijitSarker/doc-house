@@ -3,10 +3,22 @@ import logo from '../../assets/logo.png';
 import { FaBarsStaggered } from "react-icons/fa6";
 import { GiCrossedBones } from "react-icons/gi";
 import { Link } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
+import Swal from 'sweetalert2';
 
 const NavBar = () => {
     const [open, setOpen] = useState(false);
-
+    const { logout, user } = useAuth();
+    const handleLogout = () => {
+        logout();
+        Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Logged out successfully",
+            showConfirmButton: false,
+            timer: 1000
+        });
+    };
     return (
         <nav className="bg-[#07332F] z-10 relative h-16 md:h-20 flex justify-center">
             <div className='flex justify-between items-center container mx-auto'>
@@ -28,7 +40,9 @@ const NavBar = () => {
                     <Link className='text-lg font-lg font-sans text-white hover:text-[#F7A582] rounded-md px-1'>Homes</Link>
                     <Link className='text-lg font-lg font-sans text-white hover:text-[#F7A582] rounded-md px-1'>abouts</Link>
                 </ul>
-                <Link to={'/signup'}><button className='hidden md:flex hover:text-[#F7A582] font-serif w-36 h-12 items-center justify-center rounded-lg font-bold text-xl text-white transition ease-in-out duration-200'>Login / Register</button></Link>
+                {user && <button onClick={handleLogout}>Logout</button>
+                }
+                <Link to={'/signin'}><button className='hidden md:flex hover:text-[#F7A582] font-serif w-36 h-12 items-center justify-center rounded-lg font-bold text-xl text-white transition ease-in-out duration-200'>Login / Register</button></Link>
                 <div className='md:hidden z-20' onClick={() => setOpen(!open)}>
                     {
                         open ? <GiCrossedBones className='text-4xl text-[#07332F]' /> : <FaBarsStaggered className='text-4xl text-[#F7A582]' />

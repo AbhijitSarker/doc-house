@@ -1,16 +1,37 @@
 import { useForm } from 'react-hook-form';
 import img from '../../assets/login.png';
 import frame from '../../assets/Frame-1.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { FaGoogle, FaGithub } from "react-icons/fa";
+import useAuth from '../../hooks/useAuth';
+import Swal from 'sweetalert2';
 
 const SignIn = () => {
     const { register, handleSubmit, reset, formState: { errors }, } = useForm()
+    const { login } = useAuth();
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const from = location.state?.from?.pathname || '/';
 
     const onSubmit = (data) => {
         console.log(data);
-        // Handle form submission here
+        login(data.email, data.password)
+            .then(result => {
+                reset();
+                Swal.fire({
+                    position: "top-end",
+                    icon: "success",
+                    title: "User Created successfully",
+                    showConfirmButton: false,
+                    timer: 1000
+                });
+
+                navigate(from, { replace: true });
+            })
+            .then(error => {
+            });
     };
     return (
         <div>
