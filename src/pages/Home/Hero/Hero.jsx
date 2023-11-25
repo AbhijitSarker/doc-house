@@ -12,7 +12,7 @@ const Hero = () => {
             <div className='text-[#F3F3F3] container mx-auto flex flex-col items-center md:flex-row '>
                 <div className='my-20 md:mt-32 md:w-1/2 flex flex-col items-center text-center'>
                     <h1 className='text-4xl lg:text-7xl font-semibold mb-4'>Your Best Medical Help Center</h1>
-                    <p className='text-lg md:text-xl font-normal mb-8 '>Lorem Ipsum is simply dummy text they are printing typesetting has been the industry's stardard.</p>
+                    <p className='text-lg md:text-xl font-normal mb-8 '>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem libero alias dolorum quasi corrupti asperiores a adipisci doloribus facilis veniam minus harum numquam rerum non doloremque dolores ipsum blanditiis quia debitis necessitatibus eveniet illo rem, sit cumque! Illo facilis alias sint aut dolorum reiciendis, quae, veritatis tenetur eaque adipisci sequi!</p>
 
                     <Link><button className='flex bg-[#F7A582] hover:bg-[#f59264]  w-36 h-12 items-center justify-center rounded-lg font-bold text-xl font-sans text-white'>All Services</button></Link>
                 </div>
