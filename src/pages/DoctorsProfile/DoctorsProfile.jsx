@@ -1,0 +1,25 @@
+import { Link } from 'react-router-dom';
+import vector from '../../assets/styles/Vector.png';
+import vector2 from '../../assets/styles/vector2.png';
+
+const DoctorsProfile = () => {
+
+    return (
+        <div>
+            <div className='h-52 xl:h-64  relative bg-[#07332F]'>
+                <img className='h-40 absolute  bottom-0 left-28' src={vector} alt="" />
+                <img className='h-48 absolute bottom-20 right-28' src={vector2} alt="" />
+
+                <div className='relative pt-28 container mx-auto'>
+                    <div className=' md:absolute'>
+                        <div className='static container mx-auto text-zinc-100 text-lg font-normal'><Link to={'/'}> <button>Home</button> </Link>/ <Link>Doctor Profile</Link></div>
+                        <h2 className='text-5xl text-zinc-100 text-[45px] font-bold'>Doctor Profile</h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    );
+};
+
+export default DoctorsProfile;

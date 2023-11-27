@@ -91,15 +91,13 @@ const Contact = () => {
                                 selected={selectedDate}
                                 onChange={handleDateChange}
                                 filterDate={isWeekday}
-                                minDate={new Date()} // Set minimum selectable date to today
-                                dateFormat="MMMM d, yyyy" // Date and time format
+                                minDate={new Date()}
+                                dateFormat="MMMM d, yyyy"
                                 placeholderText='Pick a Date'
                                 className="w-full h-16 px-4 bg-white text-white bg-opacity-5 rounded-[10px] focus:outline-none focus:border focus:border-[#F7A582]"
                                 name='date'
-                                wrapperClassName="w-full max-w-md mx-auto" // Wrapper class for width and margin
-
+                                wrapperClassName="w-full max-w-md mx-auto"
                             />
-
                         </div>
                         <div>
                             <DatePicker

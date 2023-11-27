@@ -18,6 +18,7 @@ import { AiOutlineDollar } from "react-icons/ai";
 
 import { Rating } from '@smastrom/react-rating';
 import '@smastrom/react-rating/style.css';
+import { Link } from 'react-router-dom';
 const Doctors = () => {
     const [slidesToShow, setSlidesToShow] = useState(3); // Default to 2 slides
 
@@ -76,7 +77,7 @@ const Doctors = () => {
                             <AiOutlineDollar className='w-6 h-6' />
                             <p>$15</p>
                         </div>
-                        <button className="w-full h-14 rounded-[10px] border border-orange-300 text-orange-300 text-xl font-bold hover:bg-orange-300 hover:text-white" >View Profile</button>
+                        <Link to={'/doctor'}><button className="w-full h-14 rounded-[10px] border border-orange-300 text-orange-300 text-xl font-bold hover:bg-orange-300 hover:text-white" >View Profile</button></Link>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='my-10'>
