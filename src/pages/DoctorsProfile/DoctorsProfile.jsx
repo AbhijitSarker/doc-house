@@ -2,10 +2,13 @@ import { Link } from 'react-router-dom';
 import vector from '../../assets/styles/Vector.png';
 import vector2 from '../../assets/styles/vector2.png';
 
+import Profile from './Profile/Profile';
+import Description from './Description/Description';
+
 const DoctorsProfile = () => {
 
     return (
-        <div>
+        <div className=''>
             <div className='h-52 xl:h-64  relative bg-[#07332F]'>
                 <img className='h-40 absolute  bottom-0 left-28' src={vector} alt="" />
                 <img className='h-48 absolute bottom-20 right-28' src={vector2} alt="" />
@@ -17,6 +20,12 @@ const DoctorsProfile = () => {
                     </div>
                 </div>
 
+            </div>
+
+            <div className='mx-2 md:mx-0'>
+                <Profile></Profile>
+
+                <Description></Description>
             </div>
         </div>
     );
