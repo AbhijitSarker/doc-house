@@ -7,7 +7,7 @@ import { IoLocationOutline } from 'react-icons/io5';
 
 const Profile = () => {
     return (
-        <div className='container mx-auto flex gap-8 flex-col md:flex-row  border bg-slate-50 rounded-xl my-20 p-8'>
+        <div className='container mx-auto flex gap-8 flex-col md:flex-row  border shadow-xl rounded-xl my-20 p-8'>
             <div className=''>
                 <img className='h-full object-cover rounded-lg' src={doc} alt="" />
             </div>

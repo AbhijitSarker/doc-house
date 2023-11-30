@@ -14,7 +14,7 @@ const DoctorsProfile = () => {
                 <img className='h-48 absolute bottom-20 right-28' src={vector2} alt="" />
 
                 <div className='relative pt-28 container mx-auto'>
-                    <div className=' md:absolute'>
+                    <div className='ml-5 md:absolute'>
                         <div className='static container mx-auto text-zinc-100 text-lg font-normal'><Link to={'/'}> <button>Home</button> </Link>/ <Link>Doctor Profile</Link></div>
                         <h2 className='text-5xl text-zinc-100 text-[45px] font-bold'>Doctor Profile</h2>
                     </div>
