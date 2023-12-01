@@ -1,9 +1,6 @@
 import img1 from '../../../assets/doctors/doc1.png';
 import quote from '../../../assets/quote.png';
 
-import { Rating } from '@smastrom/react-rating';
-import '@smastrom/react-rating/style.css';
-
 const Review = () => {
     return (
         <div>
@@ -19,11 +16,7 @@ const Review = () => {
                         <div className='ml-5'>
                             <h5 className='text-neutral-700 text-xl font-bold leading-relaxed'>Awlad Hossain</h5>
                             <p className=" text-neutral-500 text-base font-normal font-['Source Sans 3'] leading-relaxed" >Product Designer</p>
-                            <Rating
-                                style={{ maxWidth: 180 }}
-                                value={3}
-                                readOnly
-                            />
+
                         </div>
                     </div>
                     <div>
