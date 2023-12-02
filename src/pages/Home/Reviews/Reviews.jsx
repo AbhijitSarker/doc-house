@@ -40,6 +40,7 @@ const Reviews = () => {
                 <h3 className=' text-neutral-950 text-[40px] font-bold'>What Our Patients Says</h3>
                 <p className=' text-neutral-700 w-[70%] text-base font-normal leading-relaxed'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inve ntore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
             </div>
+
             <Swiper
                 slidesPerView={slidesToShow}
                 spaceBetween={30}
@@ -68,6 +69,7 @@ const Reviews = () => {
 
                     </div>
                 </SwiperSlide>
+
                 <SwiperSlide className='my-10'>
                     <div className="  bg-white rounded-[10px] border border-neutral-200 flex flex-col justify-center gap-8 p-10">
                         <div className='flex justify-between'>
@@ -86,9 +88,10 @@ const Reviews = () => {
                             <p className='w-[280px]  md:w-[80%]'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknow printer tool a galley of type and scrambled it to make type specimen book has survived not only five centurines.</p>
                         </div>
                         <img className='md:hidden w-20' src={quote} alt="" />
-
                     </div>
                 </SwiperSlide>
+
+
                 <SwiperSlide className='my-10'>
                     <div className="  bg-white rounded-[10px] border border-neutral-200 flex flex-col justify-center gap-8 p-10">
                         <div className='flex justify-between'>
@@ -107,9 +110,9 @@ const Reviews = () => {
                             <p className='w-[280px]  md:w-[80%]'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknow printer tool a galley of type and scrambled it to make type specimen book has survived not only five centurines.</p>
                         </div>
                         <img className='md:hidden w-20' src={quote} alt="" />
-
                     </div>
                 </SwiperSlide>
+
                 <SwiperSlide className='my-10'>
                     <div className="  bg-white rounded-[10px] border border-neutral-200 flex flex-col justify-center gap-8 p-10">
                         <div className='flex justify-between'>
@@ -128,9 +131,9 @@ const Reviews = () => {
                             <p className='w-[280px]  md:w-[80%]'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknow printer tool a galley of type and scrambled it to make type specimen book has survived not only five centurines.</p>
                         </div>
                         <img className='md:hidden w-20' src={quote} alt="" />
-
                     </div>
                 </SwiperSlide>
+
 
 
             </Swiper>
